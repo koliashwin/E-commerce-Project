@@ -41,14 +41,14 @@
 **for valid jwt token do this :** In Postman, go to the Auth section, select the auth type as Bearer Token, and replace the value of the token with the value received after hitting the login endpoint (**POST /api/orders/login**).
 
 1. **POST /api/orders -** Create a new order (requires JWT token in Authorization header)
-    sample_data: 
-###    {
-###        "items": [
-###            { "productId": 1, "quantity": 2, "price": 50.0 },
-###            { "productId": 2, "quantity": 1, "price": 30.0 }
-###        ],
-###        "totalAmount": 130.0
-###    }
+    **sample_data:** 
+    {
+        "items": [
+            { "productId": 1, "quantity": 2, "price": 50.0 },
+            { "productId": 2, "quantity": 1, "price": 30.0 }
+        ],
+        "totalAmount": 130.0
+    }
 
 2. **GET /api/orders/:id -** Get order details by ID (requires JWT token in Authorization header)
     
